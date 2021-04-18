@@ -25,6 +25,9 @@ public class ProductRestController {
 	@Value("${couponService.url}")
 	private String couponServiceURL;
 
+	@Value("${couponService.testurl}")
+	private String couponServicetestURL;
+
 	@RequestMapping(value = "/products", method = RequestMethod.POST)
 	public Product create(@RequestBody Product product) {
 		Coupon coupon = restTemplate.getForObject(couponServiceURL + product.getCouponCode(), Coupon.class);
