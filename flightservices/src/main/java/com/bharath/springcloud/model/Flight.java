@@ -20,6 +20,9 @@ public class Flight {
 	private String arrivalCity;
 	private Date dateOfDeparture;
 	private Time estimatedDepartureTime;
+	private String test;
+
+
 
 	public Long getId() {
 		return id;
@@ -36,6 +39,15 @@ public class Flight {
 	public void setFlightNumber(String flightNumber) {
 		this.flightNumber = flightNumber;
 	}
+
+	public String getTest() {
+		return test
+	}
+
+	public void setTest(String test{
+		this.test = test
+	}
+
 
 	public String getOperatingAirlines() {
 		return operatingAirlines;
